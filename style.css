@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.payment-form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.method {
+  padding: 10px;
+  background: #f0f4f8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1 1 23%;
+  margin: 5px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.method.active {
+  background: #e0e8ef;
+}
+
+.method .icon {
+  width: 18px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.card-icons {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.card-icons i {
+  font-size: 20px;
+  color: #888;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .payment-form {
+    padding: 15px;
+  }
+
+  .method {
+    flex: 1 1 48%;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .disclaimer {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-form {
+    padding: 10px;
+  }
+
+  .method {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .disclaimer {
+    font-size: 10px;
+  }
+}
